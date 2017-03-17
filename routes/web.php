@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('test/', function() {
  echo "printing test here!!";
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
